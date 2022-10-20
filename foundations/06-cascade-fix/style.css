@@ -2,20 +2,31 @@ body{
   font-family:Arial, Helvetica, sans-serif
 }
 
+
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
+
+.para.small-para {
   font-size: 14px;
-  font-weight: 800;
 }
+
 
 .para {
   font-size: 22px;
 }
+
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border: 2px solid black
+}
+
 
 .confirm {
   background: green;
@@ -23,11 +34,6 @@ body{
   font-weight: bold;
 } 
 
-.button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-}
 
 .child {
   color: rgb(0, 0, 0);
@@ -35,8 +41,15 @@ body{
   font-size: 14px;
 }
 
+
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+
+div.text.child{
+  font-weight: bold;
+  font-size: 14px;
 }
