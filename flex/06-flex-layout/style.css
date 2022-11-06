@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  /* stack all elements in the body from top to bottom */
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 12px;
 }
 
 input {
@@ -24,4 +28,43 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.content{
+  flex: 1;
+  display: flex;
+  /* center across the y axis*/
+  align-items: center;
+  /* center across the x axis*/
+  justify-content: center;
+  /* 
+  flex direction default is row
+  here the divs inside content will be stacked
+  from top to bottom
+  */
+  flex-direction: column;
+}
+
+ul{
+  display: flex;
+  /* removes the bullet points from the li elements*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+}
+
+a{
+  color: #666;
+  text-decoration: none;
+}
+
+.footer{
+  background: #eee;
 }
